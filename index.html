@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<SCRIPT> //Password
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "elevennine") {
+window.open('test2.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+
+<style>
+.button {
+    background-color: #3399ff;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-alligh: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #0066cc;
+}
+</style>
+
+    <head> 
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <CENTER> <b> <font size = "20" face="Impact"> Official VPRS Website </font> </b> </CENTER>
+    </head>
+        <title>  VPRS Website  </title>
+        <body>
+
+        <CENTER> <font face="Impact"> -The official website for all VRPS needs- </font> </CENTER>
+
+        <br>
+
+        <CENTER> <input class="button" value="Member Area" onClick="passWord()"> </FORM> </CENTER>
+
+        <br>
+
+        <CENTER> <img src="IMG_4990.jpg" alt="Homie Group Arisoft" height="315" width="560"> </CENTER>
+
+        <br>
+        <CENTER>
+        <button class="button">Members</button>
+        <button class="button">Shop</button>
+        <button class="button">Bible</button>
+        <button class="button">About us</button>
+
+        </CENTER>
+        </body>
+</html>
